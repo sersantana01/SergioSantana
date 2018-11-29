@@ -1,0 +1,407 @@
+/*reset*/
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td, *{
+	margin:0;
+	padding:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+	outline:none;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+.clear{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+ a:hover{
+	text-decoration: underline;
+}
+
+/*____________________________________*/
+*{margin: 0; padding: 0;}
+
+
+/**********INDEX HTML*************/
+html, body{
+	width:100%; height:100%;
+	font-family:'BoxedBook', Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+body h1{font-family:'BoxedBook', Arial, Helvetica, sans-serif; color:#00b2e2; font-size:14px; margin-bottom:10px; font-weight:bolder;}
+.h8{height:8%;}
+.h92{height:92%;}
+.contGral{
+	background-size:100% 100%;
+	width:100%;
+	height:100%;
+	font-size:13px;
+	font-family:'BoxedBook', Arial, Helvetica, sans-serif;
+ }
+
+.encabezado{
+	background: rgb(1,5,5);
+background: linear-gradient(90deg, rgba(1,5,5,1) 66%, rgba(2,53,66,1) 79%, rgba(8,97,120,1) 94%);
+	background-size:cover;
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	color:#FFF;
+}
+.encabezado header{height:100%;}
+.encabezado .row{height:100%;}
+.logo{
+	width:77px;
+	height:100%;
+	background:url(/assets/images/logoPromad.png) center center no-repeat;
+	display:inline-block;
+}
+.usuario{text-align:right; margin-top:4%;}
+.usuario i{color:#E1E1E1; margin-right:3px;}
+.icnTel{
+	width:24px;
+	height:24px;
+	background:url(/assets/images/icnTel.png) center center no-repeat;
+	display:inline-block;
+	background-size:cover;
+	margin-right:10px;
+	margin-top:4%;
+}
+.contNumero{
+	background:blackberry;
+	width:50%;
+	padding:2px 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align:center;
+	height:25px;
+	color:#fff;
+	font-size:19px;
+	text-shadow: 1px 1px 2px #000;
+	top: 28%;
+    position: relative;
+}
+.contNumero .fas{
+	position: relative;
+    padding-right: 8px;
+    border-right: 1px solid #084D6E;
+    margin-right: 5px;
+}
+.numeroTel{
+	position: relative;
+}
+.icnCerrar{color:#00B3E3;}
+.icnCerrar:hover{text-decoration:none; color:#e1e1e1;}
+
+/********** map ************/
+.envolventeMapa{
+    width: 100%;
+	padding:0px;
+}
+.map{
+	background: transparent  center no-repeat;
+	width:100%;
+	height:100%;
+}
+.envolventeDatos{
+	background: rgba(0, 0, 0, .8);
+    overflow-y: auto;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 63px;
+    width: 250px;
+    z-index: 3;
+    right: 0px;
+    bottom: 0px;
+}
+
+.icnUsuario{margin-right:10px; color:#00B3E3;}
+.usuario .fa-power-off{margin-left:10px;}
+
+/********** panel derecho ************/
+.btnColapsar{
+	width:20px;
+	height:24px;
+	display: block;
+    position: fixed;
+    margin-left: -35px;
+	margin-top:5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+    vertical-align: middle;
+	background:#084D6E;
+	padding-top:3px;
+	z-index: 2;
+}
+.btnColapsar:hover{
+	cursor:pointer;
+	opacity:0.8;
+}
+.btnExpandir{
+	width:20px;
+	height:24px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+    vertical-align: middle;
+	background:#084D6E;
+	padding-top:3px;
+	z-index: 2;
+}
+.btnExpandir:hover{
+	cursor:pointer;
+	opacity:0.8;
+}
+.btnColapsar .fas, .btnExpandir .fas, #envolventeDatos #btnColapsar i{
+	font-size: 16px;
+    color: #EEE;
+    text-shadow: 1px 2px 4px #555;
+}
+.contenidoRegistro{padding-top:10px;
+
+}
+
+.contCorporacion, .contPrioridad, .infoComplementa {display:none;}
+
+.envIcnCorporacion{
+	width:50px;
+	height:50px;
+	/*background:#FFF;*/
+	display:inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align:center;
+}
+.envIcnCorporacion img{vertical-align:text-top;}
+.envIcnPrioridadRojo, .envIcnPrioridadAmarillo, .envIcnPrioridadVerde{
+	width:50px;
+	height:50px;
+	/*background:#FFF;*/
+	display:inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align:center;
+	cursor:pointer;
+}
+.iconosCorporacion img{vertical-align:text-top;}
+.icnPersonasInv, .icnAutosInv, .icnDenuncianteInv, .icnArmasInv{
+	width:40px;
+	height:40px;
+	background: rgba(147,206,222,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(23,162,184,1) 0%, rgba(117,189,209,1) 20%, rgba(23,162,184,1) 99%, rgba(23,162,184,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(23,162,184,1)), color-stop(20%, rgba(117,189,209,1)), color-stop(99%, rgba(23,162,184,1)), color-stop(100%, rgba(23,162,184,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(23,162,184,1) 0%, rgba(117,189,209,1) 20%, rgba(23,162,184,1) 99%, rgba(23,162,184,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(23,162,184,1) 0%, rgba(117,189,209,1) 20%, rgba(23,162,184,1) 99%, rgba(23,162,184,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(23,162,184,1) 0%, rgba(117,189,209,1) 20%, rgba(23,162,184,1) 99%, rgba(23,162,184,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(23,162,184,1) 0%, rgba(117,189,209,1) 20%, rgba(23,162,184,1) 99%, rgba(23,162,184,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#5abcc9', GradientType=1 );
+	display:inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align:center;
+	vertical-align:middle;
+	line-height:40px;
+}
+.icnPersonasInv:hover, .icnAutosInv:hover, .icnDenuncianteInv:hover, .icnArmasInv:hover{
+	background:#138496;
+	cursor:pointer;
+}
+.icnArma{
+	width:28px; height:28px;
+	background:url(/assets/images/armaSombraNegra.png) center center no-repeat;
+	background-size:cover;
+	display:inline-block;
+	opacity:0.7;
+	margin-top:3px;
+}
+#envolventeDatos i{font-size:18px; color:#EEE; text-shadow: 1px 2px 4px #555;}
+.icnPersonasInv:hover i:before, .icnAutosInv:hover i:before, .icnDenuncianteInv:hover i:before, .icnArmasInv:hover i:before	{text-shadow: 1px 2px 4px #000000;}
+.icnArmasInv:hover .icnArma{opacity:1;}
+.contenedorBotones{text-align:right;}
+.contenedorBotones .boton{margin-left: 5px;}
+.iconosCorporacion{overflow-x:auto; max-height:110px;}
+.iconosCorporacion span{margin-right: 3px;}
+
+.icnCerrarPanelIzq{position:absolute; top:10px; right:10px;}
+.icnCerrarPanelIzq i{color:white; font-size:20px;}
+.icnCerrarPanelIzq i:hover{cursor:pointer; opacity:0.7;}
+.contenedorUbicacion{
+	width:200px;
+	left:0px;
+	top:200px;
+
+	background:rgba(0, 0, 0, .8);    /*  80% opaque gray */
+	/*background:#e1e1e1;*/
+	position:absolute;
+	left:0px;
+	top:0;
+	bottom:0;
+	display:none;
+	z-index: 3;
+
+}
+
+
+.contenidoUbicacion{padding:10px;}
+.btnBuscar{
+	width: 30px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+	background:#17a2b8;
+	border:1px solid #17a2b8;
+	color:#FFF;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+    margin-left: -6px;
+}
+.btnBuscar:hover{background:#138496; cursor:pointer;}
+.inputBusqueda{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:1px solid #17a2b8;
+	padding:2px;
+	width: 84%;
+}
+.etiqueta{ font-size:12px; color:#CCC; margin:0; padding:0;font-weight: bold;}
+.selector{width:100%; margin-bottom:10px;
+     background: rgba(0, 0, 0, .1);
+		 color:#ccc;
+}
+.selector option{background:#333; padding: 2px 5px;}
+.textarea{
+	width:100%;
+	min-height:100px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 9px;
+
+    background: rgba(0, 0, 0, .02);
+	padding:5px;
+	color:white;
+}
+.contenidoUbicacion .cajaTexto{
+	width:100%;
+	    background: rgba(0, 0, 0, .1);
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 1px 3px;
+    color: white;
+}
+.requerido{
+	color:#00b2e2;
+    vertical-align: middle;
+		font-size: 13px;
+}
+.requerido span{font-size:10px;}
+
+
+/****Barra de herramientas****/
+.barraHerramientas{
+	width:auto;
+	height:auto;
+	position:absolute;
+	left:0px;
+	top:40%;
+	z-index: 2;
+}
+.barraHerramientas i{color:#FFF; font-size:16px; margin-top:5px;}
+.icnUbicarDirec{
+	width:22px;
+	height:28px;
+	background:#084D6E;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	display:block;
+	text-align:center;
+}
+.icnUbicarDirec:hover{cursor:pointer; opacity:0.8;}
+
+
+
+
+
+
+
+button:focus{outline:none;}
+.btnChincheta{
+	position:absolute;
+	top:200px;
+	left:400px;
+	font-size:30px;
+	color:#084D6E;
+	 -webkit-animation-name: animChincheta; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: animChincheta;
+    animation-duration: 4s;
+    animation-delay: 2s;
+	animation-iteration-count: infinite;
+	cursor:pointer;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animChincheta {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes animChincheta {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+
+/********* estilos para app **********/
+.contenedorEncabezadoApp{width:100%;}
+.busqueda{display: none;}
+hr{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-color: #999;
+}

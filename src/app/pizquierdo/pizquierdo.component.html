@@ -1,0 +1,59 @@
+<div class="envolventeMapaHtml">
+  <div id="mapat" class="map" style="position:absolute; z-index:1;">
+
+  </div>
+    <div class="barraHerramientas">
+      <span id="icnUbicarDirec" class="icnUbicarDirec"><i class="fas fa-map-marker-alt"></i></span>
+    </div>
+    <div id="btnExpandir" class="btnExpandir" style="display:none;"><i class="fas fa-chevron-left"></i></div>
+    <i class="btnChincheta fas fa-download"></i>
+    <div id="contenedorUbicacion" class="contenedorUbicacion">
+      <span id="icnCerrarPanelIzq" class="icnCerrarPanelIzq">
+          <i class="far fa-window-close"></i>
+        </span>
+      <div class="contenidoUbicacion">
+          <h1>Ubicar direcci&oacute;n</h1>
+            <!--search -->
+            <div class="busqueda">
+              <input id="mv_geocoder" class="inputBusqueda" value="Buscar..." onFocus=" if (this.value.toString().toLowerCase() == 'buscar...') this.value = '';" onBlur="if(this.value.length==0) this.value='Buscar...'">
+              <button id="btnBuscarGeneral" type="submit" class="btnBuscar" onclick="show('');">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <!--fin busqueda -->
+            <hr />
+              <button  (click)="setHabilitar()"   class="btn btn-primary my-3">click</button>
+          <form action="" method="get" class="formularioPanel">
+          <label class="etiqueta"><span class="requerido">* </span>Estado:</label>
+            <input id="txtEstado" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido">* </span>Municipio:</label>
+            <input id="txtMunicipio" name="" type="text" class="cajaTexto">
+            <input id="txtIdMunicipio" name="" type="hidden" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido">* </span>Localidad:</label>
+            <input id="txtLocalidad" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido">* </span>Colonia:</label>
+            <input id="txtColonia" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido">* </span>Calle:</label>
+            <input id="txtCalle" name="" type="text" class="cajaTexto"> <br>
+            <label class="etiqueta"><span class="requerido">* </span>Manzana:</label>
+            <input id="txtManzana" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido">* </span>Número:</label>
+            <input id="txtNumero" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido"></span>Calle cercana (uno):</label>
+            <input id="txtEntreCalleUno" name="" type="text" class="cajaTexto">
+            <label class="etiqueta"><span class="requerido"></span>Calle cercana (dos):</label> <br>
+            <input id="txtEntreCalleDos" name="" type="text" class="cajaTexto"><br>
+            <div class="requerido">
+              * <span>Requerido </span>
+            </div>
+            <div class="contenedorBotones">
+              <input id="btnUbicar" name="" type="button" value="Ubicar" class="boton btn btn-primary">
+                <input id="btnBorrar" name="" type="reset" value="Borrar" class="boton btn btn-primary">
+
+
+            </div>
+            </form>
+        </div>
+    </div><!--contenedorUbicacion -->
+</div>
+<!--envolventeMapaHtml -->

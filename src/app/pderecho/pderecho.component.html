@@ -1,0 +1,76 @@
+
+<div class="envolventeDatosHtml">
+  <div id="btnColapsar" class="btnColapsar"><i class="fas fa-chevron-right"></i></div>
+  <div class="contenidoRegistro">
+      <h1>Registro de llamada</h1>
+      <label class="etiqueta"><span class="requerido">* </span>Motivo:</label><br />
+      <select name="motivo" class="selector" id="selectMotivo">
+          <option>Seleccione una opci&oacute;n</option>
+          <option>opci&oacute;n 1</option>
+            <option>motivo u opci&oacute;n 2 seleccionada</option>
+            <option>opci&oacute;n 3</option>
+        </select>
+        <div class="contDescripcion">
+            <label class="etiqueta"><span class="requerido">* </span>Descripci&oacute;n:</label><br />
+            <textarea id="txtDescripcion" name="txtDescripcion" cols="" rows="" class="txtDescripcion textarea"></textarea>
+</div>
+        <div class="contCorporacion">
+          <hr />
+          <h1>Corporaci&oacute;n</h1>
+            <div class="iconosCorporacion">
+                <span class="envIcnCorporacion">
+                  <img src="../assets/images/institucion1.png" width="45" height="45" alt="institucion1">
+                </span>
+                <span class="envIcnCorporacion">
+                  <img src="../assets/images/institucion2.png" width="45" height="45" alt="institucion2">
+                </span>
+                <span class="envIcnCorporacion">
+                  <img src="../assets/images/institucion3.png" width="45" height="45" alt="institucion3">
+                </span>
+            </div>
+        </div>
+<div class="contPrioridad">
+          <hr />
+          <h1>Prioridad <label>Folio:</label><span>123421212</span></h1>
+            <div class="iconosCorporacion">
+                <a id="prioridadRojo" class="envIcnPrioridadRojo" title="Urgente">
+                  <img src="../assets/images/icnRojoOn.png" width="45" height="45" alt="Urgente">
+                </a>
+                <a id="prioridadAmarillo" class="envIcnPrioridadAmarillo" title="R&aacute;pida">
+                  <img src="../assets/images/icnAmarilloOff.png" width="45" height="45" alt="R&aacute;pida">
+                </a>
+                <a id="prioridadVerde" class="envIcnPrioridadVerde" title="Normal">
+                  <img src="../assets/images/icnVerdeOff.png" width="45" height="45" alt="Normal">
+                </a>
+            </div>
+        </div>
+        <div class="infoComplementa">
+          <hr />
+          <h1>Informaci&oacute;n complementaria</h1>
+            <button type="button" class="icnPersonasInv" data-toggle="modal" data-target="#ejemploModal" title="Personas Involucradas">
+              <i class='fas fa-user-friends'></i>
+            </button>
+            <button type="button" class="icnAutosInv" data-toggle="modal" data-target="#ejemploModal" title="Autos Involucrados">
+              <i class='fas fa-car'></i>
+            </button>
+            <button type="button" class="icnDenuncianteInv" data-toggle="modal" data-target="#ejemploModal" title="Datos del denunciante">
+              <i class='fas fa-address-card'></i>
+            </button>
+            <button type="button" class="icnArmasInv" data-toggle="modal" data-target="#ejemploModal" title="Armas Involucradas">
+              <span class="icnArma"></span>
+            </button>
+        </div>
+        <div class="requerido">
+          <hr />
+          * <span>Requerido </span>
+        </div>
+<div class="contenedorBotones">
+<button id="btnAceptar" type="reset" class="btn btn-primary" disabled>Aceptar</button>
+</div>
+
+    </div>
+</div>
+<!--envolventeDatosHtml -->
+<div class="contBuscar">
+</div>
+<!--contBuscar -->
