@@ -69,6 +69,7 @@ background: linear-gradient(90deg, rgba(1,5,5,1) 66%, rgba(2,53,66,1) 79%, rgba(
 	height:100%;
 	background:url(/assets/images/logoPromad.png) center center no-repeat;
 	display:inline-block;
+	background: red;
 }
 .usuario{text-align:right; margin-top:4%;}
 .usuario i{color:#E1E1E1; margin-right:3px;}
